@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-electric-pulse {
+    animation: electricPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes electricPulse {
+    0%, 100% {
+      opacity: 0.2;
+      filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.5));
+    }
+    50% {
+      opacity: 0.4;
+      filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.8));
+    }
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(34, 211, 238, 0.3),
+                  0 0 10px rgba(34, 211, 238, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(34, 211, 238, 0.5),
+                  0 0 30px rgba(34, 211, 238, 0.3),
+                  0 0 40px rgba(34, 211, 238, 0.2);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-grid-pulse {
+    animation: gridPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes gridPulse {
+    0%, 100% {
+      opacity: 0.08;
+    }
+    50% {
+      opacity: 0.15;
+    }
+  }
+
+  .animate-electric-flow {
+    animation: electricFlow 3s linear infinite;
+  }
+
+  @keyframes electricFlow {
+    0% {
+      stroke-dashoffset: 400;
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+
+  .animate-electric-flow-slow {
+    animation: electricFlowSlow 4s linear infinite;
+  }
+
+  @keyframes electricFlowSlow {
+    0% {
+      stroke-dashoffset: 400;
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+
+  .animate-electric-flow-reverse {
+    animation: electricFlowReverse 3.5s linear infinite;
+  }
+
+  @keyframes electricFlowReverse {
+    0% {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 400;
+      opacity: 0;
+    }
+  }
+
+  .animate-energy-pulse {
+    animation: energyPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes energyPulse {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(34, 211, 238, 0.5),
+                  0 0 10px rgba(34, 211, 238, 0.3);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(34, 211, 238, 0.8),
+                  0 0 30px rgba(34, 211, 238, 0.5),
+                  0 0 45px rgba(34, 211, 238, 0.3);
+      transform: scale(1.2);
+    }
+  }
+
+  .animate-particle {
+    animation: particle 4s ease-in-out infinite;
+  }
+
+  @keyframes particle {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(0) scale(0.5);
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-100px) scale(1);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px) scale(0.5);
+    }
+  }
+
+  .animate-energy-ripple {
+    animation: energyRipple 3s ease-out infinite;
+  }
+
+  @keyframes energyRipple {
+    0% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+}
