@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black shadow-lg shadow-cyan-500/10' : 'bg-black/95 backdrop-blur-sm'
+        isScrolled ? 'bg-gradient-to-r from-black via-slate-950 to-blue-950/80 shadow-lg shadow-cyan-500/10' : 'bg-gradient-to-r from-black/95 via-slate-950/95 to-blue-950/80 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,7 +162,7 @@ export default function Header() {
           isMenuOpen ? 'max-h-[600px] border-t border-slate-800' : 'max-h-0'
         }`}
       >
-        <nav className="px-4 py-4 space-y-2 bg-black">
+        <nav className="px-4 py-4 space-y-2 bg-gradient-to-b from-slate-950 to-blue-950">
           {navLinks.map((link) => (
             <Link
               key={link.path}
