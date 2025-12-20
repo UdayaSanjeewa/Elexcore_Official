@@ -215,13 +215,12 @@ export default function Home() {
             <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Sparkles className="w-5 h-5 text-cyan-400" />
               <p className="text-xl md:text-2xl text-gray-100 font-semibold">
-                Electrical • Energy • EV • Solar Solutions
+                Automobile • Solar Solutions • Electrical Solutions • Product Trading 
               </p>
               <Sparkles className="w-5 h-5 text-cyan-400" />
             </div>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              Empowering your world with innovative electrical and energy solutions. From industrial
-              installations to sustainable solar power, we deliver excellence in every project.
+              Powering your daily needs with simple and reliable solutions. We provide automobile services, electrical work, solar power systems, and quality item sales, delivering trusted service and practical solutions you can depend on.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <Link
