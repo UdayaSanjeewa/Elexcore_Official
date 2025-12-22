@@ -38,19 +38,19 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Business Park', 'Tech City, State 12345'],
+      details: ['No 69/D', 'Makawita, Ja-Ela'],
       color: 'blue',
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+1 (234) 567-890', '+1 (234) 567-891'],
+      details: ['+94 773 46 7754', '+94 773 69 7754'],
       color: 'green',
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@elexcore.com', 'support@elexcore.com'],
+      details: ['elexcores@gmail.com'],
       color: 'red',
     },
     {
@@ -113,7 +113,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-800 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder-gray-400"
-                    placeholder="John Doe"
+                    placeholder="xxxx xxxx"
                   />
                 </div>
 
@@ -129,7 +129,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-800 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder-gray-400"
-                    placeholder="john@example.com"
+                    placeholder="xxxx@example.com"
                   />
                 </div>
 
@@ -145,7 +145,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-800 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder-gray-400"
-                    placeholder="+1 (234) 567-890"
+                    placeholder="+94 xx xxx xxxx"
                   />
                 </div>
 
@@ -203,7 +203,7 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-white mb-6">Our Location</h2>
               <div className="bg-slate-800 rounded-xl overflow-hidden h-96 mb-6">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841046969995!2d-73.98823492346708!3d40.75889497138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1698926000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.5817483178603!2d79.9318061206449!3d7.107042960654659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fb002defe4e3%3A0x1c5cce8eb486a7!2ssanda&#39;s%20Place!5e0!3m2!1sen!2slk!4v1766338520700!5m2!1sen!2slk"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

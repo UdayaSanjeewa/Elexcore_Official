@@ -36,7 +36,7 @@ export default function About() {
   const trustReasons = [
     {
       title: 'Certified Professionals',
-      description: 'Our team consists of licensed electricians and certified energy specialists with years of experience.',
+      description: 'Our team consists of licensed electricians and certified automobile specialists with years of experience.',
     },
     {
       title: 'Quality Assurance',
@@ -66,7 +66,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">About ELEXCORE</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Pioneering electrical and energy solutions with expertise, integrity, and innovation
+            Pioneering automobiles and electrical systems with expertise, integrity, and innovation
           </p>
         </div>
       </section>
@@ -78,21 +78,25 @@ export default function About() {
               <h2 className="text-4xl font-bold text-white mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  Founded with a vision to revolutionize the electrical and energy sector, ELEXCORE
-                  has grown into a trusted name for comprehensive electrical solutions. Our
-                  journey began with a simple mission: to provide safe, reliable, and innovative
-                  energy solutions to homes and businesses.
+                  Founded with a vision to deliver dependable and modern technical solutions, 
+                  ELEXCORE has grown into a trusted name in automobile services, solar systems, 
+                  electrical solutions, and product trading.
                 </p>
                 <p>
-                  Today, we are proud to serve hundreds of satisfied clients across multiple
-                  sectors, from residential installations to large-scale industrial projects. Our
-                  commitment to excellence and customer satisfaction has been the cornerstone of our
-                  success.
+                  Our journey began with a simple goal: to provide safe, reliable, 
+                  and practical solutions for homes, vehicles, and businesses. 
+                  Over time, we have expanded our expertise to meet the growing demand 
+                  for efficient energy systems, advanced vehicle services, and quality products.
+
                 </p>
                 <p>
-                  With a team of certified experts and state-of-the-art equipment, we continue to
-                  push the boundaries of what's possible in electrical engineering, renewable
-                  energy, and sustainable power solutions.
+                  Today, we proudly serve clients across residential, commercial, and automotive sectors. 
+                  From vehicle diagnostics and repairs to solar power installations and electrical projects, 
+                  customer trust and quality work remain at the heart of everything we do.
+                </p>
+                <p>
+                  With a skilled team, modern tools, and a strong focus on innovation, 
+                  ELEXCORE continues to deliver solutions that are reliable, cost-effective, and built for the future.
                 </p>
               </div>
             </div>
@@ -122,13 +126,13 @@ export default function About() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-cyan-500 text-white rounded-lg flex items-center justify-center font-bold text-xl flex-shrink-0">
+                  <div className="w-12 h-12 bg-cyan-500 text-white rounded-lg flex items-center justify-center font-bold flex-shrink-0">
                     CORE
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Core Solutions</h4>
                     <p className="text-gray-400 text-sm">
-                      Essential and fundamental solutions at the heart of modern energy needs
+                      Essential and fundamental solutions at the heart of modern electrical needs
                     </p>
                   </div>
                 </div>
@@ -147,7 +151,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
               <p className="text-gray-300">
-                To deliver innovative, safe, and sustainable electrical and energy solutions that
+                To deliver innovative, safe, and sustainable electrical and automobile solutions that
                 empower our clients and contribute to a greener future. We strive to exceed
                 expectations through excellence, integrity, and continuous improvement.
               </p>
@@ -159,7 +163,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
               <p className="text-gray-300">
-                To be the leading provider of electrical and energy solutions, recognized for our
+                To be the leading provider of electrical and automobile solutions, recognized for our
                 commitment to quality, innovation, and sustainability. We envision a world powered
                 by clean, efficient, and reliable energy systems.
               </p>

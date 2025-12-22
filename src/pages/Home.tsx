@@ -23,7 +23,7 @@ export default function Home() {
     const steps = 60;
     const projectsTarget = 1000;
     const clientsTarget = 500;
-    const experienceTarget = 15;
+    const experienceTarget = 5;
 
     let currentStep = 0;
     const timer = setInterval(() => {
@@ -109,21 +109,21 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      role: 'Factory Manager',
-      text: 'Outstanding service! The team was professional and completed our electrical upgrade ahead of schedule.',
+      name: 'Nihal Dananjaya',
+      role: 'Toyota aqua 2014',
+      text: 'Elexcore successfully completed the ABS repair on my Toyota Aqua 2014 and provided a warranty.',
       rating: 5,
     },
     {
-      name: 'Priya Sharma',
-      role: 'Homeowner',
-      text: 'Our solar installation has been flawless. Already seeing significant savings on electricity bills!',
+      name: 'Nuwan Withanage',
+      role: 'Orugoda, Gampaha District',
+      text: 'Successfully installed my 5kW off-grid solar systems.',
       rating: 5,
     },
     {
-      name: 'Michael Chen',
-      role: 'Operations Director',
-      text: 'Reliable and efficient. ELEXCORE has been our trusted partner for all electrical needs.',
+      name: 'Timal Jayasekara',
+      role: 'Thalawathugoda, Colombo',
+      text: 'The team was very friendly and used new technology and tools to upgrade my house wiring. Great service.',
       rating: 5,
     },
   ];
@@ -215,12 +215,14 @@ export default function Home() {
             <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Sparkles className="w-5 h-5 text-cyan-400" />
               <p className="text-xl md:text-2xl text-gray-100 font-semibold">
-                Automobile • Solar Solutions • Electrical Solutions • Product Trading 
+                Automobile Services • Solar Systems • Electrical Solutions • Product Trading 
               </p>
               <Sparkles className="w-5 h-5 text-cyan-400" />
             </div>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              Powering your daily needs with simple and reliable solutions. We provide automobile services, electrical work, solar power systems, and quality item sales, delivering trusted service and practical solutions you can depend on.
+              All your automobile, electrical, and solar needs in one place.
+              <br />
+              <span className="font-semibold">Get a Free Quote Now</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <Link
@@ -270,10 +272,10 @@ export default function Home() {
               OUR SERVICES
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Comprehensive Energy Solutions
+              Powering life with simple solutions . .
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Cutting-edge services designed to power your world efficiently and sustainably
+              24/7 support for reliable systems and better solutions.
             </p>
           </div>
 
@@ -360,7 +362,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
             <div className="relative h-full min-h-[400px]">
               <img
-                src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg"
+                src="https://www.autotrainingcentre.com/wp-content/webp-express/webp-images/uploads/2015/07/Automotive-college-.png.webp"
                 alt="Solar installation"
                 className="w-full h-full object-cover"
               />
@@ -368,11 +370,10 @@ export default function Home() {
             </div>
             <div className="p-8 lg:p-12">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to Power Your Future?
+                Not sure where to start?
               </h3>
               <p className="text-gray-300 mb-8 text-lg">
-                Join hundreds of satisfied customers who trust ELEXCORE for their electrical and
-                energy solutions. Get a free consultation today.
+                Trust Reserve Consultancy for reliable automobile, electrical, and solar solutions. We help you choose the right solution with expert guidance and clear planning. Get a free consultation today.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
@@ -452,7 +453,7 @@ export default function Home() {
             Start Your Project Today
           </h2>
           <p className="text-xl text-gray-100 mb-10 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Transform your energy infrastructure with expert solutions from ELEXCORE
+            Your trusted partner for automobile, solar, and electrical needs. 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Link

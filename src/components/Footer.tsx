@@ -13,17 +13,17 @@ export default function Footer() {
   ];
 
   const services = [
-    'Electrical Engineering',
-    'EV Battery Solutions',
-    'Solar Power Systems',
-    'Energy Backup Solutions',
+    'Automobile Services',
+    'Solar Systems',
+    'Electrical Solutions',
+    'Product Trading',
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/19FtSVUDmD/?mibextid=wwXIfr%0A', label: 'Facebook' },
     { icon: Twitter, href: '#', label: 'Twitter' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/elexcores?igsh=b3JlOWd0bThucmV5&utm_source=qr', label: 'Instagram' },
   ];
 
   return (
@@ -38,10 +38,10 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-400 mb-4">
-              Electrical • Energy • EV • Solar Solutions
+              Automobile • Solar • Electrical • Product
             </p>
             <p className="text-sm text-gray-400">
-              Providing comprehensive electrical and energy solutions for a sustainable future.
+              Providing comprehensive automobile and electrical solutions for a sustainable future.
             </p>
           </div>
 
@@ -77,12 +77,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">123 Business Park, Tech City, State 12345</span>
+                <span className="text-sm">No 69/D, Makawita, Ja-Ela.</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                 <a href="tel:+1234567890" className="text-sm hover:text-cyan-400 transition-colors">
-                  +1 (234) 567-890
+                  +94 773 46 7754
+                </a>
+                <a href="tel:+1234567890" className="text-sm hover:text-cyan-400 transition-colors">
+                  +94 773 69 7754 
                 </a>
               </li>
               <li className="flex items-center space-x-3">
@@ -91,7 +94,7 @@ export default function Footer() {
                   href="mailto:info@elexcore.com"
                   className="text-sm hover:text-cyan-400 transition-colors"
                 >
-                  info@elexcore.com
+                  elexcores@gmail.com
                 </a>
               </li>
             </ul>
