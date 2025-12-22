@@ -19,20 +19,47 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus('idle');
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+  // Prepare FormData
+  const form = new FormData();
+  form.append('name', formData.name);
+  form.append('email', formData.email);
+  form.append('phone', formData.phone);
+  form.append('message', formData.message);
 
-    setSubmitStatus('success');
-    setIsSubmitting(false);
-    setFormData({ name: '', email: '', phone: '', message: '' });
+  try {
+    const response = await fetch(
+      'https://script.google.com/macros/s/AKfycbwy7ICqyvuNrvOBjLyZu4b-Ol_XnhcMjp96WcuxGRqf8fxkHSGKBf6ov1nj-1Tl2RlM/exec',
+      {
+        method: 'POST',
+        body: form,
+      }
+    );
 
-    setTimeout(() => {
-      setSubmitStatus('idle');
-    }, 3000);
-  };
+    if (response.ok) {
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } else {
+      setSubmitStatus('error');
+      console.error('Response not OK:', response.status, response.statusText);
+    }
+  } catch (error) {
+    setSubmitStatus('error');
+    console.error('Fetch error:', error);
+  }
+
+  setIsSubmitting(false);
+
+  // Reset submit status after 3 seconds
+  setTimeout(() => setSubmitStatus('idle'), 3000);
+};
+
+
+
 
   const contactInfo = [
     {
