@@ -6,6 +6,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -19,21 +20,28 @@ export default function Header() {
   useEffect(() => {
     setIsMenuOpen(false);
     setIsServicesOpen(false);
+    setIsAboutOpen(false);
   }, [location]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about', hasSubmenu: true },
+    { name: 'Product Trading', path: '/product-trading' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  const aboutLinks = [
     { name: 'About Us', path: '/about' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
   ];
 
   const serviceLinks = [
     { name: 'All Services', path: '/services' },
-    { name: 'Electrical Engineering', path: '/services/electrical-engineering' },
-    { name: 'EV & Battery Solutions', path: '/services/ev-battery' },
-    { name: 'Solar Power', path: '/services/solar-power' },
-    { name: 'Power Backup', path: '/services/power-backup' },
+    { name: 'Electrical Solutions', path: '/services/electrical-solutions' },
+    { name: 'Automobile Services', path: '/services/automobile-services' },
+    // { name: 'EV & Battery Solutions', path: '/services/ev-battery' },
+    { name: 'Solar Systems', path: '/services/solar-power' },
+    // { name: 'Power Backup', path: '/services/power-backup' },
     { name: 'Smart Home', path: '/services/smart-home' },
   ];
 
@@ -56,24 +64,63 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.slice(0, 2).map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium transition-colors relative group ${
-                  location.pathname === link.path
+            <Link
+              to="/"
+              className={`text-sm font-medium transition-colors relative group ${
+                location.pathname === '/'
+                  ? 'text-cyan-400'
+                  : 'text-gray-300 hover:text-cyan-400'
+              }`}
+            >
+              Home
+              <span
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full ${
+                  location.pathname === '/' ? 'w-full' : ''
+                }`}
+              ></span>
+            </Link>
+
+            <div
+              className="relative"
+              onMouseEnter={() => setIsAboutOpen(true)}
+              onMouseLeave={() => setIsAboutOpen(false)}
+            >
+              <button
+                className={`text-sm font-medium transition-colors relative group flex items-center ${
+                  location.pathname === '/about' || location.pathname === '/projects'
                     ? 'text-cyan-400'
                     : 'text-gray-300 hover:text-cyan-400'
                 }`}
               >
-                {link.name}
+                About Us
+                <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${isAboutOpen ? 'rotate-180' : ''}`} />
                 <span
                   className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full ${
-                    location.pathname === link.path ? 'w-full' : ''
+                    location.pathname === '/about' || location.pathname === '/projects' ? 'w-full' : ''
                   }`}
                 ></span>
-              </Link>
-            ))}
+              </button>
+
+              <div
+                className={`absolute top-full left-0 mt-2 w-48 bg-slate-900 rounded-lg shadow-xl border border-slate-700 overflow-hidden transition-all duration-200 ${
+                  isAboutOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                }`}
+              >
+                {aboutLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`block px-4 py-3 text-sm transition-colors ${
+                      location.pathname === link.path
+                        ? 'bg-cyan-500/20 text-cyan-400 font-medium'
+                        : 'text-gray-300 hover:bg-slate-800'
+                    } ${link.name === 'About Us' ? 'border-b border-slate-700' : ''}`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             <div
               className="relative"
@@ -117,24 +164,37 @@ export default function Header() {
               </div>
             </div>
 
-            {navLinks.slice(2).map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium transition-colors relative group ${
-                  location.pathname === link.path
-                    ? 'text-cyan-400'
-                    : 'text-gray-300 hover:text-cyan-400'
+            <Link
+              to="/product-trading"
+              className={`text-sm font-medium transition-colors relative group ${
+                location.pathname === '/product-trading'
+                  ? 'text-cyan-400'
+                  : 'text-gray-300 hover:text-cyan-400'
+              }`}
+            >
+              Product Trading
+              <span
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full ${
+                  location.pathname === '/product-trading' ? 'w-full' : ''
                 }`}
-              >
-                {link.name}
-                <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full ${
-                    location.pathname === link.path ? 'w-full' : ''
-                  }`}
-                ></span>
-              </Link>
-            ))}
+              ></span>
+            </Link>
+
+            <Link
+              to="/contact"
+              className={`text-sm font-medium transition-colors relative group ${
+                location.pathname === '/contact'
+                  ? 'text-cyan-400'
+                  : 'text-gray-300 hover:text-cyan-400'
+              }`}
+            >
+              Contact
+              <span
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full ${
+                  location.pathname === '/contact' ? 'w-full' : ''
+                }`}
+              ></span>
+            </Link>
 
             <Link
               to="/contact"
@@ -159,23 +219,47 @@ export default function Header() {
 
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isMenuOpen ? 'max-h-[600px] border-t border-slate-800' : 'max-h-0'
+          isMenuOpen ? 'max-h-[700px] border-t border-slate-800' : 'max-h-0'
         }`}
       >
         <nav className="px-4 py-4 space-y-2 bg-gradient-to-b from-slate-950 to-blue-950">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`block px-4 py-2 rounded-lg transition-colors ${
-                location.pathname === link.path
-                  ? 'bg-cyan-500/20 text-cyan-400 font-medium'
-                  : 'text-gray-300 hover:bg-slate-800'
-              }`}
+          <Link
+            to="/"
+            className={`block px-4 py-2 rounded-lg transition-colors ${
+              location.pathname === '/'
+                ? 'bg-cyan-500/20 text-cyan-400 font-medium'
+                : 'text-gray-300 hover:bg-slate-800'
+            }`}
+          >
+            Home
+          </Link>
+
+          <div className="pt-2">
+            <button
+              onClick={() => setIsAboutOpen(!isAboutOpen)}
+              className="w-full flex items-center justify-between px-4 py-2 rounded-lg text-gray-300 hover:bg-slate-800"
             >
-              {link.name}
-            </Link>
-          ))}
+              <span className={location.pathname === '/about' || location.pathname === '/projects' ? 'text-cyan-400 font-medium' : ''}>
+                About Us
+              </span>
+              <ChevronDown className={`w-4 h-4 transition-transform ${isAboutOpen ? 'rotate-180' : ''}`} />
+            </button>
+            <div className={`overflow-hidden transition-all ${isAboutOpen ? 'max-h-96' : 'max-h-0'}`}>
+              {aboutLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`block pl-8 pr-4 py-2 text-sm rounded-lg transition-colors ${
+                    location.pathname === link.path
+                      ? 'bg-cyan-500/20 text-cyan-400 font-medium'
+                      : 'text-gray-400 hover:bg-slate-800'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <div className="pt-2">
             <button
@@ -203,6 +287,28 @@ export default function Header() {
               ))}
             </div>
           </div>
+
+          <Link
+            to="/product-trading"
+            className={`block px-4 py-2 rounded-lg transition-colors ${
+              location.pathname === '/product-trading'
+                ? 'bg-cyan-500/20 text-cyan-400 font-medium'
+                : 'text-gray-300 hover:bg-slate-800'
+            }`}
+          >
+            Product Trading
+          </Link>
+
+          <Link
+            to="/contact"
+            className={`block px-4 py-2 rounded-lg transition-colors ${
+              location.pathname === '/contact'
+                ? 'bg-cyan-500/20 text-cyan-400 font-medium'
+                : 'text-gray-300 hover:bg-slate-800'
+            }`}
+          >
+            Contact
+          </Link>
 
           <Link
             to="/contact"
