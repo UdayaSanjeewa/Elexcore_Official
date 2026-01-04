@@ -6,31 +6,27 @@ const products = [
     items: [
       {
         id: 1,
-        name: '5kW Hybrid Solar Inverter',
-        price: '₹45,000',
-        description: 'Advanced hybrid inverter with MPPT controller, suitable for off-grid and grid-tie systems',
-        specs: ['5kW capacity', 'Dual MPPT', '48V battery support']
+        name: '2 kW Anern MPPT Solar Inverter Evo 2000va',
+        price: 'Rs 70,000/=',
+        image: 'https://e-catalog.com/jpg_zoom1/2578555.jpg',
+        description: 'The built-in MPPT controller monitors the solar cell output in real time, intelligently adjusts charging, and extends battery life.',
+        specs: ['Brand - Anern','2 kW capacity', 'Low PV', '12 V battery support']
       },
       {
         id: 2,
-        name: '10kW Three-Phase Inverter',
-        price: '₹85,000',
-        description: 'Commercial-grade inverter for industrial applications and large installations',
-        specs: ['10kW capacity', '3-phase output', 'IP65 rated']
+        name: '3.2 kW Anern MPPT Solar Inverter Evo 3200va',
+        price: 'Rs 85,000/=',
+        image: 'https://mzimg.com/big/31/hk0gtqkuj31.jpg',
+        description: 'The AN-SCI02 Pro Series Off-Grid Hybrid Solar Inverter is a highly efficient pure sine wave inverter designed for off-grid applications.',
+        specs: ['Brand - Anern','3.2 kW capacity', 'High PV', '24 V battery support']
       },
       {
         id: 3,
-        name: '3kW Pure Sine Wave Inverter',
-        price: '₹28,000',
-        description: 'Compact pure sine wave inverter for residential applications',
-        specs: ['3kW capacity', 'Pure sine wave', 'LED display']
-      },
-      {
-        id: 4,
-        name: '7.5kW MPPT Solar Inverter',
-        price: '₹62,000',
-        description: 'High-efficiency MPPT inverter with maximum power tracking',
-        specs: ['7.5kW capacity', 'MPPT technology', 'WiFi monitoring']
+        name: '6.5 kW AN-FGI-P6500 Solar Inverters',
+        price: 'RS 155,000/=',
+        image: 'https://www.anern.com/uploads/image/20251223/an-fgi-p6500-series-solar-inverters-an-fgi-p6500_(3).jpg',
+        description: 'AN-FGI-P6500 is a high-efficiency, intelligent pure sine wave solar high-frequency inverter designed specifically for off-grid.',
+        specs: ['Brand - Anern','6.5 kW capacity', 'High PV', '48 V battery support']
       }
     ]
   },
@@ -39,64 +35,56 @@ const products = [
     items: [
       {
         id: 5,
-        name: '450W Mono Solar Panel',
-        price: '₹18,500',
+        name: 'JA Solar 500W Mono',
+        price: 'Rs 48,500',
+        image: 'https://www.pluginsolar.co.uk/wp-content/uploads/2023/03/JA-Solar-500W-Monocrystalline-MBB-Percium-Half-Cell-Solar-Panel.png',
         description: 'High-efficiency monocrystalline solar panel with 25-year warranty',
-        specs: ['450W output', '22.5% efficiency', 'Weather-resistant']
+        specs: ['500W output', '22.5% efficiency', 'Weather-resistant']
       },
       {
         id: 6,
-        name: '550W Bifacial Solar Panel',
-        price: '₹24,500',
+        name: 'Trina Vertex S 420W',
+        price: 'Rs 24,500',
+        image: 'https://www.pluginsolar.co.uk/wp-content/uploads/2023/05/trina-vertex-s-415w-black-1.jpg',
         description: 'Premium bifacial panel capturing light from both sides',
-        specs: ['550W output', 'Bifacial technology', '25-year warranty']
+        specs: ['420W output', 'Bifacial technology', '25-year warranty']
       },
-      {
-        id: 7,
-        name: '380W Poly Solar Panel',
-        price: '₹14,800',
-        description: 'Cost-effective polycrystalline panel for large-scale installations',
-        specs: ['380W output', '19.8% efficiency', 'Durable frame']
-      },
-      {
-        id: 8,
-        name: '600W Super Mono Panel',
-        price: '₹28,900',
-        description: 'Latest generation monocrystalline panel with enhanced efficiency',
-        specs: ['600W output', '23.5% efficiency', 'Anti-reflective coating']
-      }
     ]
   },
   {
-    category: 'Batteries',
+    category: 'HV Batteries',
     items: [
       {
         id: 9,
-        name: '10kWh Lithium Battery',
-        price: '₹4,50,000',
-        description: 'High-capacity lithium battery system with battery management',
-        specs: ['10kWh capacity', '5000+ cycles', 'BMS included']
+        name: 'Aqua/Axio 2024 HV Battery',
+        price: 'Rs 320,000',
+        image: 'https://www.ryansautomotive.ie/wp-content/uploads/2023/05/Aqua-battery-pack.jpg',
+        description: '20 cell Toyota Aqua / Axio high voltage battery pack. Not used in Sri Lanka.',
+        specs: ['2 years warranty', '2000+ cycles', 'without BMS']
       },
       {
         id: 10,
-        name: '5kWh Lead Acid Battery',
-        price: '₹1,25,000',
-        description: 'Reliable lead-acid battery for backup applications',
-        specs: ['5kWh capacity', '2000+ cycles', 'Maintenance-free']
+        name: 'Aqua/Axio 2023 HV Battery',
+        price: 'RS 280,000',
+        image: 'https://www.ryansautomotive.ie/wp-content/uploads/2023/05/Aqua-battery-pack.jpg',
+        description: '20 cell Toyota Aqua / Axio high voltage battery pack. Not used in Sri Lanka.',
+        specs: ['2 years warranty', '2000+ cycles', 'without BMS']
       },
       {
         id: 11,
-        name: '15kWh LiFePO4 Battery',
-        price: '₹6,75,000',
-        description: 'Industrial-grade LiFePO4 battery for long-term storage',
-        specs: ['15kWh capacity', '6000+ cycles', '25-year lifespan']
+        name: 'Aqua/Axio 2022 HV Battery',
+        price: 'RS 250,000',
+        image: 'https://www.ryansautomotive.ie/wp-content/uploads/2023/05/Aqua-battery-pack.jpg',
+        description: '20 cell Toyota Aqua / Axio high voltage battery pack. Not used in Sri Lanka.',
+        specs: ['2 years warranty', '2000+ cycles', 'without BMS']
       },
       {
         id: 12,
-        name: '3.5kWh Portable Power Bank',
-        price: '₹95,000',
-        description: 'Portable lithium power bank for emergency backup',
-        specs: ['3.5kWh capacity', 'Portable design', 'Fast charging']
+        name: 'Aqua/Axio 2021 HV Battery',
+        price: 'RS 230,000',
+        image: 'https://www.ryansautomotive.ie/wp-content/uploads/2023/05/Aqua-battery-pack.jpg',
+        description: '20 cell Toyota Aqua / Axio high voltage battery pack. Not used in Sri Lanka.',
+        specs: ['2 years warranty', '2000+ cycles', 'without BMS']
       }
     ]
   }
@@ -131,7 +119,18 @@ export default function ProductTrading() {
                   key={product.id}
                   className="bg-gradient-to-br from-slate-900/50 to-blue-950/50 rounded-xl border border-slate-700/50 hover:border-cyan-400/50 transition-all hover:shadow-xl hover:shadow-cyan-500/20 overflow-hidden group"
                 >
-                  <div className="p-6 flex flex-col h-full">
+                  {/* IMAGE */}
+                  {product.image && (
+                    <div className="h-48 w-full overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-contain bg-white p-4 group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  
+                  {/* <div className="p-6 flex flex-col h-full">
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
                         {product.name}
@@ -161,7 +160,42 @@ export default function ProductTrading() {
                         </button>
                       </div>
                     </div>
+                  </div>/* */}
+                  <div className="p-6 grid grid-rows-[auto_1fr_auto] h-full">
+                  <div className="grid grid-rows-[auto_1fr]">
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      {product.name}
+                    </h3>
+
+                    <p className="text-gray-400 text-sm mb-4">
+                      {product.description}
+                    </p>
+
+                    <div className="mt-auto">
+                      <p className="text-xs text-gray-500 font-semibold uppercase mb-2">
+                        Specifications:
+                      </p>
+                      <ul className="space-y-1">
+                        {product.specs.map((spec, idx) => (
+                          <li key={idx} className="text-sm text-gray-300 flex items-start">
+                            <span className="text-cyan-400 mr-2">•</span>
+                            {spec}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
+
+                  <div className="border-t border-slate-700/50 pt-4 mt-4">
+                    <div className="flex items-center justify-between">
+                      <p className="text-2xl font-bold text-cyan-400">{product.price}</p>
+                      <button className="bg-cyan-500 p-2 rounded-lg">
+                        <ShoppingCart className="w-5 h-5" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
                 </div>
               ))}
             </div>

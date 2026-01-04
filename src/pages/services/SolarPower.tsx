@@ -36,7 +36,7 @@ export default function SolarPower() {
       icon: Factory,
       title: 'Industrial Solutions',
       description: 'High-capacity solar power systems for factories and industrial facilities.',
-      stats: 'Megawatt-scale',
+      stats: 'KW-scale',
       features: ['Load optimization', 'Hybrid solutions', 'Peak management', 'Remote monitoring'],
       image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg',
     },
@@ -46,7 +46,7 @@ export default function SolarPower() {
       description: 'Energy storage solutions to store excess solar power for night or power outages.',
       stats: '10-year warranty',
       features: ['Lithium-ion systems', 'Backup power', 'Smart management', 'Expandable'],
-      image: 'https://images.pexels.com/photos/6942096/pexels-photo-6942096.jpeg',
+      image: 'https://cdn.prod.website-files.com/6620bd5a80a662c1e00c6cc1/68b79f470aa7b82a7a5d330b_sigenergy%20battery.jpeg',
     },
   ];
 
@@ -270,8 +270,8 @@ export default function SolarPower() {
 
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { value: '50MW+', label: 'Capacity Installed' },
-                    { value: '1000+', label: 'Happy Customers' },
+                    { value: '50KW+', label: 'Capacity Installed' },
+                    { value: '10+', label: 'Happy Customers' },
                     { value: '25 Years', label: 'Panel Warranty' },
                     { value: '90%', label: 'Bill Savings' },
                   ].map((stat, index) => (
