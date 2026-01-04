@@ -215,7 +215,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Sparkles className="w-5 h-5 text-cyan-400" />
               <p className="text-xl md:text-2xl text-gray-100 font-semibold">
-                Automobile Services • Solar Systems • Electrical Solutions • Product Trading 
+                Automobile Servicesxx • Solar Systems • Electrical Solutions • Product Trading 
               </p>
               <Sparkles className="w-5 h-5 text-cyan-400" />
             </div>

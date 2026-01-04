@@ -65,7 +65,7 @@ export default function AutomobileServices() {
   ];
 
   const certifications = [
-    { icon: Shield, title: 'ISO 9001:2015', subtitle: 'Quality Certified' },
+    { icon: Shield, title: 'Setified', subtitle: 'Quality Certified' },
     { icon: CheckCircle, title: 'OEM Certified', subtitle: 'Partnership' },
     { icon: Zap, title: 'EV Specialist', subtitle: 'Certified' },
     { icon: TrendingUp, title: 'Industry Standard', subtitle: 'Compliance' },
@@ -172,7 +172,7 @@ export default function AutomobileServices() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { value: '2000+', label: 'Vehicles Serviced', icon: TrendingUp },
+              { value: '100+', label: 'Vehicles Serviced', icon: TrendingUp },
               { value: '50+', label: 'Certified Technicians', icon: Shield },
               { value: '98%', label: 'Customer Satisfaction', icon: CheckCircle },
             ].map((stat, index) => (

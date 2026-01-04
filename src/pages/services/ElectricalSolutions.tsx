@@ -64,9 +64,9 @@ export default function ElectricalSolutions() {
   ];
 
   const certifications = [
-    { icon: Shield, title: 'ISO 9001:2015', subtitle: 'Certified Quality' },
+    { icon: Shield, title: 'Qulity Setified', subtitle: 'Certified Quality' },
     { icon: FileCheck, title: 'Licensed', subtitle: 'Electrical Contractors' },
-    { icon: Shield, title: 'NFPA 70E', subtitle: 'Compliant' },
+    { icon: Shield, title: 'NFPA', subtitle: 'Compliant' },
     { icon: TrendingUp, title: 'IEC Standards', subtitle: 'Adherence' },
   ];
 
